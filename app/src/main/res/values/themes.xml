@@ -1,0 +1,18 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- 1. Tema dasar aplikasi utama -->
+    <style name="Base.Theme.ProjectSkillSwap" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+
+    <!-- 2. Tema aplikasi yang digunakan di manifest -->
+    <style name="Theme.ProjectSkillSwap" parent="Base.Theme.ProjectSkillSwap" />
+
+    <!-- 3. Tema khusus untuk Splash Screen jika diperlukan (opsional) -->
+    <!-- Jika SplashActivity Anda tidak butuh tema khusus, style ini bisa dihapus -->
+    <style name="Theme.ProjectSkillSwap.NoActionBar" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Contoh: membuat status bar transparan -->
+        <item name="android:statusBarColor">@android:color/transparent</item>
+    </style>
+
+</resources>

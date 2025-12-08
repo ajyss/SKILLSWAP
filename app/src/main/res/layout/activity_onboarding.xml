@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#05181F"
+    tools:context=".OnboardingActivity">
+
+    <!-- 1. Area Teks Atas -->
+    <TextView
+        android:id="@+id/tv_welcome_title"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:gravity="center"
+        android:paddingStart="40dp"
+        android:paddingEnd="40dp"
+        android:text="Selamat Datang di\nskillSwap"
+        android:textColor="@android:color/white"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- 2. CardView Tunggal yang Mengisi Sisa Layar -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/onboarding_card_container"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        app:cardBackgroundColor="#F1FFF3"
+        app:cardCornerRadius="40dp"
+        app:cardElevation="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_welcome_title"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?android:attr/selectableItemBackground">
+
+    <!-- Gunakan ConstraintLayout di dalam CardView untuk menata elemen -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- Tombol "Selanjutnya" -->
+        <TextView
+            android:id="@+id/tv_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="Selanjutnya"
+            android:textColor="#0E3E3E"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@id/indicator"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <!-- Indikator Titik -->
+        <me.relex.circleindicator.CircleIndicator3
+            android:id="@+id/indicator"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_marginBottom="32dp"
+            app:ci_drawable="@drawable/indicator_active"
+            app:ci_drawable_unselected="@drawable/indicator_inactive"
+            app:ci_gravity="center"
+            app:ci_height="8dp"
+            app:ci_margin="8dp"
+            app:ci_width="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <!-- ViewPager2 mengisi ruang sisa di atas navigasi -->
+
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/viewPagerOnboarding"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toTopOf="@id/tv_next"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <!-- KONTENER BENDERA DAN KODE NEGARA -->
+        <ImageView
+            android:id="@+id/iv_flag"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="24dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:src="@drawable/flag_default" />
+
+        <TextView
+            android:id="@+id/tv_country_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="@id/iv_flag"
+            app:layout_constraintStart_toEndOf="@id/iv_flag"
+            app:layout_constraintTop_toTopOf="@id/iv_flag"
+            tools:text="N/A" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout> <!-- Penutup untuk ConstraintLayout di DALAM CardView -->
+
+    </androidx.cardview.widget.CardView> <!-- Penutup untuk CardView -->
+
+</androidx.constraintlayout.widget.ConstraintLayout> <!-- Penutup untuk ConstraintLayout UTAMA (root) -->

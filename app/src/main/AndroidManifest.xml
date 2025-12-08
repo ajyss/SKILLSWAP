@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <!--
+      JIKA ANDA INGIN MENGGUNAKAN LOKASI GPS,
+      TAMBAHKAN IZIN DI SINI, DI LUAR TAG <application>
+    -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.ProjectSkillSwap">
+        <activity
+            android:name=".BaseActivity"
+            android:exported="false" />
+        <!-- =============================================================== -->
+        <!-- 1. SPLASH ACTIVITY - SATU-SATUNYA TITIK MASUK APLIKASI (LAUNCHER) -->
+        <!-- =============================================================== -->
+        <activity
+            android:name=".SplashActivity"
+            android:exported="true"
+            android:theme="@style/Theme.ProjectSkillSwap.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity> <!-- =============================================================== -->
+        <!-- ACTIVITY LAINNYA - Tidak bisa di-launch dari luar aplikasi -->
+        <!-- =============================================================== -->
+        <!-- MainActivity (SUDAH BUKAN LAUNCHER) -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" /> <!-- Onboarding Activity -->
+        <activity
+            android:name=".OnboardingActivity"
+            android:exported="false" /> <!-- Login Activity -->
+        <activity
+            android:name=".LoginActivity"
+            android:exported="false" /> <!-- Register Activity -->
+        <activity
+            android:name=".RegisterActivity"
+            android:exported="false" />
+    </application>
+
+</manifest>

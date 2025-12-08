@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--
+        Ini adalah tema dasar (base theme) untuk aplikasi Anda.
+        Nama "Theme.APK_SKILLSWAP" dipilih agar konsisten dengan nama modul Anda.
+        Parent "Theme.Material3.DayNight.NoActionBar" adalah pilihan yang tepat
+        karena proyek Anda menggunakan dependensi Material 3 modern.
+    -->
+    <style name="Theme.APK_SKILLSWAP" parent="Theme.Material3.DayNight.NoActionBar">
+        <!--
+            Di sinilah tempat untuk kustomisasi tema di masa depan.
+            Contoh: Menentukan warna utama aplikasi.
+            <item name="colorPrimary">@color/purple_500</item>
+            <item name="colorPrimaryVariant">@color/purple_700</item>
+            <item name="colorOnPrimary">@color/white</item>
+        -->
+    </style>
+
+</resources>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Background Colors -->
+    <color name="background_dark">#05181F</color>
+
+    <!-- Button Colors -->
+    <color name="btn_light">#DFF7E2</color>
+    <color name="btn_light_pressed">#C8E6CB</color>
+    <color name="btn_teal">#008080</color>
+    <color name="btn_teal_pressed">#006666</color>
+
+    <!-- Text Colors -->
+    <color name="text_dark">#0E3E3E</color>
+    <color name="text_white">#FFFFFF</color>
+
+    <!-- Ripple Colors -->
+    <color name="ripple_light">#B0BEC5</color>
+    <color name="ripple_teal">#004D4D</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+</resources>
