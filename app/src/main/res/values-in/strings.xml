@@ -1,0 +1,49 @@
+<resources>
+    <!-- ====================================================== -->
+    <!-- Teks Global & Splash Screen -->
+    <!-- ====================================================== -->
+    <string name="app_name">SkillSwap</string>
+    <string name="logo_content_description">Logo SkillSwap</string>
+
+    <!-- ====================================================== -->
+    <!-- Teks untuk Halaman Onboarding -->
+    <!-- ====================================================== -->
+    <string name="onboarding_title_1">Selamat Datang Di\nSkillSwap</string>
+    <string name="onboarding_title_2">Tukarkan Keahlian Anda Dan\nDapatkan Keuntungan</string>
+    <string name="button_next">Selanjutnya</string>
+    <string name="button_start">Mulai</string>
+    <string name="image_onboarding_content_description">Gambar ilustrasi untuk onboarding</string>
+    <!-- String yang hilang untuk contentDescription di slide onboarding -->
+    <string name="image_onboarding1">Gambar onboarding pertama</string>
+    <string name="image_onboarding2">Gambar onboarding kedua</string>
+
+    <!-- ====================================================== -->
+    <!-- Teks untuk Halaman Login -->
+    <!-- ====================================================== -->
+    <string name="login_title">Masuk ke Akun Anda</string>
+    <string name="login_button_text">Masuk</string>
+    <string name="email">Email</string>
+    <string name="kata_sandi">Kata Sandi</string>
+    <string name="hint_password">••••••••</string>
+    <string name="login_dont_have_account">Belum punya akun? Daftar</string>
+
+    <!-- ====================================================== -->
+    <!-- Teks untuk Halaman Register -->
+    <!-- ====================================================== -->
+    <string name="register_title">Buat Akun</string>
+    <string name="register_button_text">Daftar</string>
+    <string name="nama_lengkap">Nama Lengkap</string>
+    <string name="hint_full_name">Masukkan nama lengkap Anda</string>
+    <string name="konfirmasi_kata_sandi">Konfirmasi Kata Sandi</string>
+    <string name="register_already_have_account">Sudah punya akun? Masuk</string>
+
+    <!-- String yang hilang dari error di activity_register.xml -->
+    <string name="buat_akun">Buat Akun</string>
+    <string name="nama_lengkap_anda">Nama Lengkap Anda</string>
+    <string name="example_example_com">example@example.com</string>
+    <string name="hint">••••••••</string>
+    <string name="hints">••••••••</string>
+    <string name="sign_up">DAFTAR</string>
+    <string name="already_have_an_account_log_in">Sudah punya akun? Masuk</string>
+
+</resources>
